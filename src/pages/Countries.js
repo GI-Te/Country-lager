@@ -8,7 +8,7 @@ import { useState } from "react";
 function Countries() {
   const url = "https://restcountries.eu/rest/v2/all";
   const { countries, isPending, error } = useCountries(url);
-  const [search,setSearch]=useState('')
+  // const [search,setSearch]=useState('')
 
   return (
     <section className="mt-5 bg-info">
@@ -16,9 +16,8 @@ function Countries() {
         <div className="m-5 border-bottom bg-transparent text-center">
           <h1>List Of countries</h1>
         </div>
-        <div className=" m-7">
-            <input type="text" placeholder="search" onChange={e=>setSearch(e.target.value)}></input>
-          </div>
+            {/* <input type="text" placeholder="search" onChange={e=>setSearch(e.target.value)}></input> */}
+        
         <div className="row text-center">
           {isPending && <Loading />}
           {error && <Error />}

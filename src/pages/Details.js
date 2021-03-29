@@ -23,7 +23,7 @@ function Details({ match }) {
             <div className="row" key={index}>
               <img
                 src={country.flag}
-                style={{ height: 200, width: "auto" }}
+                style={{ height: 500, width: "auto" }}
                 alt={country.name}
               />
               <div className="m-2 p-3 card text-muted">

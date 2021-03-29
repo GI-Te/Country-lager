@@ -10,7 +10,7 @@ function Card({ name, img, population }) {
         src={img}
         alt=""
         className="card-img-top img-fluid"
-        style={{ height: "15rem", width: "20rem" }}
+        style={{ height: "10rem", width: "18rem" }}
       />
       <div className="card-body">
         <Link to={`/details/${name}`} className="nav-link text-info">
